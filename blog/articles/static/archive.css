@@ -1,0 +1,22 @@
+.archive{
+    background-color: aquamarine;
+}
+
+.header{
+    display: flex;
+}
+
+.header img{
+    width: 50%;
+    height: 50%;
+    margin: auto;
+}
+
+.article-info{
+    float: right;
+    
+}
+
+.article-text{
+    font-family: Arial, Helvetica, sans-serif;
+}

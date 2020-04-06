@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Hello Django</title>
+</head>
+<body>
+    <form method="POST">
+        {% csrf_token %} 
+        <textarea id="sql" name="sql"></textarea><br>
+        <input type="radio" name="firstSql" value="firstSql">
+        <label for="male">Выдать перечень книг, имеющихся в наличии, указав их количество, цену.</label><br>
+        <input type="radio" name="secondSql" value="secondSql">
+        <label for="male">Выдать список книг, поступивших в прошлом месяце, указав название, автора и
+            стоимость.</label><br>
+        <input type="radio" name="thirdSql" value="thirdSql">
+        <label for="male">Выдать отчет о продажах за прошлый месяц, указав название, год выпуска,
+            количество и общую сумму.</label><br>
+        <input type="radio" name="fourthSql" value="fourthSql">
+        <label for="male">Выдать список книг, название которых начинается с V и поступили в
+            этом году в продажу.</label><br>
+        <input type="submit">
+    </form>
+    {{ sqlResponse }}
+</body>
+</html>
